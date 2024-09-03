@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your slots | BookTU</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/innerpage.css' %}">
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <nav id="home">
+        <nav class="navbar">
+            <h2><a href="home" class="logo">Book⚾<span
+                        style="font-size: 25px;color: rgb(6, 184, 6);">TU</span></a>
+            </h2>
+            <input type="search" placeholder="search" class="search">
+            <select name="option" id="option" class="city">
+                <option value="" disabled selected>Coimbatore</option>
+                <option value="option1">Coimbatore</option>
+            </select>
+            <div class="logsign">
+                <a href="" class="logsign1">Login</a>
+                <h1>|</h1>
+                <a href="" class="logsign2">Sign in</a>
+            </div>
+        </nav>
+        <div>
+            <div class="slider">
+                <div class="slides">
+                    <img src="{% static 'images/Black Modern Personal LinkedIn Banner (4).png' %}" alt="Image 1" class="sliders">
+                    <img src="{% static 'images/Black Modern Personal LinkedIn Banner (3).png' %}" alt="Image 2" class="sliders">
+                    <img src="{% static 'images/Black Modern Personal LinkedIn Banner (2).png' %}" alt="Image 3" class="sliders">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="turfh3">Rs yard cricket / football Turf</h3>
+            <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.5 <i class="fa-solid fa-star ts"></i>
+                <i class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                    class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"
+                    style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i>
+            </h2>
+            <p class="turfp"><span class="turfspan"><b>Address : </b></span>SP Kannusamy Gounder St, SP
+                Nagar, Laxmi Nagar, Sanganoor, Coimbatore, Tamil Nadu 641027</p>
+            <div style="display: inline-flex;">
+                <a href="https://maps.app.goo.gl/brSwtCzihnVUivbB9" class="turfa"><i
+                        class="fa-solid fa-diamond-turn-right"></i><span class="turfspana">Directions</span></a>
+                <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span class="turfspana">Call</span></a>
+                <a href="" class="turfa"><i class="fa-solid fa-share"></i><span class="turfspana">Share</span></a>
+            </div>
+        </div>
+        <a href="#body" class="uparrow"><i class="fa-solid fa-arrow-up arrowup"></i> </a>
+        <div class="date-container">
+            <input type="date" name="date" id="currentDate" class="currentDate">
+            <span id="currentDay" class="currentDay"></span>
+        </div>
+        <div class="bookingform">
+            <div style="display: flex;justify-content: space-between;">
+                <h3 class="turfh3">Book Your Slot</h3>
+                <button style="height: 30px;width: 30px;background-color: black;color: white;cursor: pointer;"
+                    onclick="bkingfrmclose()">X</button>
+            </div>
+            <div>
+                <h4 class="turfh4">Time :</h4>
+                <div>
+                    <input type="time" name="" id="" class="bkingip starttime">
+                    <p class="timep">to</p>
+                    <input type="time" name="" id="" class="bkingip endtime">
+                    <button onclick="calculateValue()" class="confirm">Confirm</button>
+                </div>
+                <div>
+                    <h4 class="turfh4">Date :</h4>
+                    <input type="date" name="today" id="today" class="bkingip">
+                </div>
+                <div>
+                    <h4 class="turfh4">Total Amount :</h4>
+                    <p class="totalamount"></p>
+                </div>
+                <div>
+                    <button class="paybutton">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="slots-container">
+            <h2 class="rsh2">Slots</h2>
+            <div style="display: flex;flex-wrap: wrap;justify-content: space-around;" class="slotdiv">
+                <div class="timeslot" onclick="bookingform('12:00')">12 pm slots</div>
+                <div class="timeslot" onclick="bookingform('13:00')">1 pm slots</div>
+                <div class="timeslot" onclick="bookingform('14:00')">2 pm slots</div>
+                <div class="timeslot" onclick="bookingform('15:00')">3 pm slots</div>
+                <div class="timeslot" onclick="bookingform('16:00')">4 pm slots</div>
+                <div class="timeslot" onclick="bookingform('17:00')">5 pm slots</div>
+                <div class="timeslot" onclick="bookingform('18:00')">6 pm slots</div>
+                <div class="timeslot" onclick="bookingform('19:00')">7 pm slots</div>
+                <div class="timeslot" onclick="bookingform('20:00')">8 pm slots</div>
+                <div class="timeslot" onclick="bookingform('21:00')">9 pm slots</div>
+                <div class="timeslot" onclick="bookingform('22:00')">10 pm slots</div>
+                <div class="timeslot" onclick="bookingform('23:00')">11 pm slots</div>
+                <div class="timeslot" onclick="bookingform('00:00')">12 am slots</div>
+                <div class="timeslot" onclick="bookingform('01:00')">1 am slots</div>
+                <div class="timeslot" onclick="bookingform('02:00')">2 am slots</div>
+                <div class="timeslot" onclick="bookingform('03:00')">3 am slots</div>
+                <div class="timeslot" onclick="bookingform('04:00')">4 am slots</div>
+                <div class="timeslot" onclick="bookingform('05:00')">5 am slots</div>
+                <div class="timeslot" onclick="bookingform('06:00')">6 am slots</div>
+                <div class="timeslot" onclick="bookingform('07:00')">7 am slots</div>
+                <div class="timeslot" onclick="bookingform('08:00')">8 am slots</div>
+                <div class="timeslot" onclick="bookingform('09:00')">9 am slots</div>
+                <div class="timeslot" onclick="bookingform('10:00')">10 am slots</div>
+                <div class="timeslot" onclick="bookingform('11:00')">11 am slots</div>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

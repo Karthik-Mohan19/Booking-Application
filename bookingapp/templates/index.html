@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book your slots | BookTU</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <nav id="home">
+        <nav class="navbar">
+            <h2><a href="home" class="logo">Book⚾<span style="font-size: 25px;color: rgb(6, 184, 6);">TU</span></a>
+            </h2>
+            <input type="search" placeholder="search" class="search">
+            <select name="option" id="option" class="city">
+                <option value="" disabled selected>Coimbatore</option>
+                <option value="option1">Coimbatore</option>
+            </select>
+            <div class="logsign">
+                <a href="login" class="logsign1">Login</a>
+            </div>
+        </nav>
+        <div>
+            <div class="slider">
+                <div class="slides">
+                    <img src="{% static 'images/Black Modern Personal LinkedIn Banner (4).png' %}" alt="Image 1" class="sliders">
+                    <img src="{% static 'images/Black Modern Personal LinkedIn Banner (3).png' %}" alt="Image 2" class="sliders">
+                    <img src="{% static 'images/Black Modern Personal LinkedIn Banner (2).png' %}" alt="Image 3" class="sliders">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="display: flex;justify-content: space-between;">
+                <h1 class="abt">Coimbatore Turf's</h1>
+                <!-- <select name="option" id="option" class="sort">
+                    <option value="" class="sortopt" disabled selected>Sort By</option>
+                    <option value="" class="sortopt">Near Me</option>
+                    <option value="" class="sortopt">Price Low to High</option>
+                    <option value="" class="sortopt">Price High to Low</option>
+                    <option value="" class="sortopt">Rating</option>
+                </select> -->
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="{% static 'images/tfmain1img.jpeg' %}" alt="" class="mainimg">
+                </div>
+                <div>
+                    <a href="rs" style="text-decoration: none;color: black;">
+                        <h3 class="turfh3">Rs yard cricket / football Turf</h3>
+                        <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.5 <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts" style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i></h2>
+                        <p class="turfp"><span class="turfspan"><b>Address : </b></span>SP Kannusamy Gounder St, SP
+                            Nagar, Laxmi Nagar, Sanganoor, Coimbatore, Tamil Nadu 641027</p>
+                        <div style="display: inline-flex;">
+                            <a href="https://maps.app.goo.gl/brSwtCzihnVUivbB9" class="turfa"><i class="fa-solid fa-diamond-turn-right"></i><span
+                                    class="turfspana">Directions</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span
+                                    class="turfspana">Call</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-share"></i><span
+                                    class="turfspana">Share</span></a>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <a href="#body" class="uparrow"><i class="fa-solid fa-arrow-up arrowup"></i> </a>
+            <div style="display: flex;">
+                <div>
+                    <img src="{% static 'images/turf genesis.jpeg' %}" alt="" class="mainimg">
+                </div>
+                <div>
+                    <a href="turfGenius" style="text-decoration: none;color: black;">
+                        <h3 class="turfh3">Turf Genesis</h3>
+                        <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.8 <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts" style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i></h2>
+                        <p class="turfp"><span class="turfspan"><b>Address : </b></span>Turf Genesis, 801/1, ARI Garden, Nehru St, Thirumurugan Nagar, Coimbatore, Tamil Nadu 641004</p>
+                        <div style="display: inline-flex;">
+                            <a href="https://maps.app.goo.gl/8WL5PZXMZJW4dTpq5" class="turfa"><i class="fa-solid fa-diamond-turn-right"></i><span
+                                    class="turfspana">Directions</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span
+                                    class="turfspana">Call</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-share"></i><span
+                                    class="turfspana">Share</span></a>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="{% static 'images/lionden img.png' %}" alt="" class="mainimg">
+                </div>
+                <div>
+                    <a href="lionDen" style="text-decoration: none;color: black;">
+                        <h3 class="turfh3">Lions Den Sports Arena - Football Turf</h3>
+                        <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.7 <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts" style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i></h2>
+                        <p class="turfp"><span class="turfspan"><b>Address : </b></span>1st St, Sridevi Nagar, Giri Nagar, Koundampalayam, K K Pudur, Coimbatore, Tamil Nadu 641030</p>
+                        <div style="display: inline-flex;">
+                            <a href="https://maps.app.goo.gl/ihFcscC4oFzNvzHt5" class="turfa"><i class="fa-solid fa-diamond-turn-right"></i><span
+                                    class="turfspana">Directions</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span
+                                    class="turfspana">Call</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-share"></i><span
+                                    class="turfspana">Share</span></a>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="{% static 'images/crossbar.jpg' %}" alt="" class="mainimg">
+                </div>
+                <div>
+                    <a href="crossbar" style="text-decoration: none;color: black;">
+                        <h3 class="turfh3">Crossbar Sports Village</h3>
+                        <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.4 <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts" style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i></h2>
+                        <p class="turfp"><span class="turfspan"><b>Address : </b></span>Cheran Nagar, Selvapuram North, Coimbatore, Tamil Nadu 641001</p>
+                        <div style="display: inline-flex;">
+                            <a href="https://maps.app.goo.gl/TwHhedrRKAfKi6Vx7" class="turfa"><i class="fa-solid fa-diamond-turn-right"></i><span
+                                    class="turfspana">Directions</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span
+                                    class="turfspana">Call</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-share"></i><span
+                                    class="turfspana">Share</span></a>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="{% static 'images/kovai arena.JPG' %}" alt="" class="mainimg">
+                </div>
+                <div>
+                    <a href="kovai" style="text-decoration: none;color: black;">
+                        <h3 class="turfh3">Kovai Arena - Football Turf</h3>
+                        <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.5 <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts" style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i></h2>
+                        <p class="turfp"><span class="turfspan"><b>Address : </b></span>30 A1, Chinna Ayyavu Thevar Layout Opp to Adwaith G.N.S. Matric H.Sec School, Udayampalayam, Tamil Nadu 641028</p>
+                        <div style="display: inline-flex;">
+                            <a href="https://maps.app.goo.gl/MhCDmrvwUCAJcc166" class="turfa"><i class="fa-solid fa-diamond-turn-right"></i><span
+                                    class="turfspana">Directions</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span
+                                    class="turfspana">Call</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-share"></i><span
+                                    class="turfspana">Share</span></a>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <img src="{% static 'images/hindustan turf.jpg' %}" alt="" class="mainimg">
+                </div>
+                <div onclick="turfdetails()">
+                    <a href="hindustan" style="text-decoration: none;color: black;">
+                        <h3 class="turfh3">Hindusthan Football Turf</h3>
+                        <h2 class="turfstar"><span class="turfspan"><b>Rating : </b></span>4.5 <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts"></i> <i class="fa-solid fa-star ts"></i> <i
+                                class="fa-solid fa-star ts" style="background: linear-gradient(
+                                    to right,
+                                    gold,
+                                    gold,
+                                    rgb(225, 253, 201),
+                                    rgb(225, 253, 201)                                );color: transparent;background-clip: text;"></i></h2>
+                        <p class="turfp"><span class="turfspan"><b>Address : </b></span>Hindusthan gardens, Nava India Rd, Coimbatore, Tamil Nadu 641028</p>
+                        <div style="display: inline-flex;">
+                            <a href="https://maps.app.goo.gl/oJBLgqe2fSidBXKR7" class="turfa"><i class="fa-solid fa-diamond-turn-right"></i><span
+                                    class="turfspana">Directions</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-phone"></i><span
+                                    class="turfspana">Call</span></a>
+                            <a href="" class="turfa"><i class="fa-solid fa-share"></i><span
+                                    class="turfspana">Share</span></a>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

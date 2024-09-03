@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(225, 253, 201);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.logsign{
+    display: flex;
+    
+}
+.logsign1, .logsign2{
+    font-size: 100%;
+    color: rgb(7, 119, 7);
+    margin: 0 10px;
+    text-decoration: none;
+    
+}
+.search{
+    width: 35%;
+    border: none;
+    border-radius: 24px;
+    padding: 0 0 0 20px;
+}
+.city{
+    padding: 10px;
+    border: solid 2px rgb(83, 83, 83);
+    border-radius: 12px;
+    width: 15%;
+}
+.slider {
+    width: 100%;
+    height: auto;
+    margin: 50px 0%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slides {
+    display: flex;
+    animation: slide 20s cubic-bezier(0.23, 1, 0.320, 1) infinite;
+}
+
+.slides img {
+    margin: 0 10px;
+    width: 90%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-87%); }
+    66% { transform: translateX(-170%); }
+    100% { transform: translateX(0%); }
+}
+.mainimg{
+    height: 80%;
+    width: 80%;
+    margin: 30px;
+}
+.turfh3{
+    margin: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180%;
+}
+.turfp{
+    font-size: 100%;
+    width: 80%;
+    margin: 30px 0;
+}
+.turfspan{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    margin-right: 2%;
+}
+.turfa{
+    color: rgb(16, 69, 243);
+    border: solid black 1px;
+    border-radius: 24px;
+    padding: 12px;
+    margin: 10px;
+    text-decoration: none;
+    transition: all 1s;
+    box-shadow: 3px 3px 10px black;
+    
+}
+.turfspana{
+    margin: 0 8px;
+    color: black;
+}
+.turfa:hover{
+    background: linear-gradient(
+        to right,
+        white,
+        rgb(8, 243, 8),
+        green 
+    );}
+.ts{
+    color: gold;
+    filter: drop-shadow(1px 1px 1px black);
+    font-size: 90%;
+    font-weight: lighter;
+}
+.sort{
+    border: none;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: transparent;
+}
+.sortopt{
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    margin: 15px;
+}
+.arrowup{
+    background-color: green;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    left: 95%;
+    top: 10%;
+    color: white;
+}
+.uparrow{
+    position: sticky;
+    top: 90%;
+}
